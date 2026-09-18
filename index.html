@@ -2,62 +2,115 @@
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Siam Telikom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siam Telikom | Mobile & Recharge Shop</title>
+<meta name="description" content="Siam Telikom - Mobile recharge, bKash and telecom services.">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#08090d;color:#fff}
-header{background:#0c0e13;border-bottom:1px solid #3b3218;padding:18px;text-align:center;position:sticky;top:0}
-.logo{font-size:25px;font-weight:900;color:#f5c542}.logo span{color:#fff}
-.hero{padding:70px 20px;text-align:center;background:radial-gradient(circle at 50% 0,#173d68,#08090d 55%)}
-h1{font-size:clamp(42px,10vw,72px);margin:0 0 12px}.gold{color:#f5c542}
-p{color:#b9bec9}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn,.card a{display:inline-block;padding:14px 22px;border-radius:12px;font-weight:bold;text-decoration:none}.call{background:#f5c542;color:#111}.wa{background:#168b55;color:#fff}.bk{background:#d51d3e;color:#fff}.dark{background:#151a23;color:#fff;border:1px solid #f5c542}
-section{padding:55px 6%}.title{text-align:center}.title h2{font-size:34px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:30px auto}
-.card{background:#11141b;border:1px solid #2b303a;border-radius:18px;padding:25px}.card h3{font-size:21px}.card p{font-size:14px}
-.info{max-width:850px;margin:auto;background:#10151d;border:1px solid #343944;border-radius:20px;padding:25px;text-align:center}
-.contact{background:#0e1621}.contact .grid{grid-template-columns:repeat(2,1fr)}
-.card a{margin-top:12px;width:100%;text-align:center}
-footer{text-align:center;padding:25px;color:#888;border-top:1px solid #252832}
-@media(max-width:700px){.grid,.contact .grid{grid-template-columns:1fr}section{padding:45px 5%}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;background:#08090d;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,9,13,.92);backdrop-filter:blur(12px);border-bottom:1px solid #2b2d35}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:900;color:#f4c542}.logo span{color:#fff}
+.navlinks{display:flex;gap:20px;font-size:14px}.navlinks a:hover{color:#f4c542}
+.hero{padding:85px 0 70px;background:radial-gradient(circle at 80% 20%,#17365d 0,#08090d 45%);text-align:center}
+.badge{display:inline-block;border:1px solid #f4c542;color:#f4c542;border-radius:30px;padding:7px 15px;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(38px,8vw,72px);line-height:1.05;margin-bottom:16px}
+.gold{color:#f4c542}
+.hero p{max-width:680px;margin:0 auto 28px;color:#b9bdc8}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:12px;font-weight:800;border:1px solid #f4c542}
+.primary{background:#f4c542;color:#111}.secondary{background:#111923;color:#fff}
+section{padding:65px 0}.title{text-align:center;margin-bottom:35px}.title h2{font-size:34px}.title p{color:#9da3af}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#11131a;border:1px solid #292c35;border-radius:18px;padding:25px}
+.icon{font-size:32px;margin-bottom:12px}.card h3{margin-bottom:7px}.card p{color:#aeb3bd;font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.panel{background:linear-gradient(145deg,#11131a,#0d1b2a);border:1px solid #292c35;border-radius:22px;padding:30px}
+.info{display:grid;gap:12px;margin-top:18px}.info div{padding:13px 15px;border-radius:12px;background:#0a0d12;border:1px solid #252832}
+.contact{background:linear-gradient(135deg,#0e1723,#11131a)}
+.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.bigbtn{display:block;text-align:center;padding:16px;border-radius:14px;margin-top:12px;font-weight:900}
+.call{background:#f4c542;color:#111}.wa{background:#178b56;color:#fff}.bk{background:#d71939;color:#fff}
+footer{border-top:1px solid #292c35;padding:25px 0;text-align:center;color:#8f95a1;font-size:13px}
+@media(max-width:700px){.navlinks{display:none}.cards,.about,.contactbox{grid-template-columns:1fr}.hero{padding:65px 0}.container{width:90%}}
 </style>
 </head>
 <body>
-<header><div class="logo">SIAM <span>TELIKOM</span></div></header>
+<header>
+ <div class="container nav">
+  <div class="logo">SIAM <span>TELIKOM</span></div>
+  <nav class="navlinks"><a href="#services">সার্ভিস</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></nav>
+ </div>
+</header>
 
+<main>
 <section class="hero">
-<h1>Siam <span class="gold">Telikom</span></h1>
-<p>মোবাইল রিচার্জ • bKash • SIM & Telecom Service</p>
-<div class="buttons">
-<a class="btn call" href="tel:01401901606">📞 কল করুন</a>
-<a class="btn wa" href="https://wa.me/8801401901606" target="_blank">💬 WhatsApp</a>
-</div>
+ <div class="container">
+  <div class="badge">📱 Trusted Mobile & Telecom Service</div>
+  <h1>Siam <span class="gold">Telikom</span></h1>
+  <p>মোবাইল রিচার্জ, bKash এবং বিভিন্ন টেলিকম সেবা—সহজ, দ্রুত ও বিশ্বস্তভাবে।</p>
+  <div class="buttons">
+   <a class="btn primary" href="tel:01401901606">📞 এখনই কল করুন</a>
+   <a class="btn secondary" href="https://wa.me/8801401901606" target="_blank">💬 WhatsApp</a>
+  </div>
+ </div>
 </section>
 
 <section id="services">
-<div class="title"><h2>আমাদের <span class="gold">সার্ভিস</span></h2><p>দ্রুত ও বিশ্বস্ত টেলিকম সেবা</p></div>
-<div class="grid">
-<div class="card"><h3>📲 মোবাইল রিচার্জ</h3><p>বিভিন্ন অপারেটরের রিচার্জ ও টকটাইম সেবা।</p></div>
-<div class="card"><h3>💸 bKash Agent</h3><p>আমাদের bKash Agent নম্বরে যোগাযোগ করুন।</p><a class="bk" href="tel:01975038770">01975038770</a></div>
-<div class="card"><h3>📶 SIM & Telecom</h3><p>SIM ও অন্যান্য টেলিকম-সংক্রান্ত সেবা।</p></div>
-<div class="card"><h3>🔐 Pasrol</h3><p>Pasrol-এর জন্য যোগাযোগ করুন।</p><a class="dark" href="tel:01806666488">01806666488</a></div>
-</div>
+ <div class="container">
+  <div class="title"><h2>আমাদের <span class="gold">সার্ভিস</span></h2><p>আপনার প্রয়োজনীয় টেলিকম সেবা এক জায়গায়</p></div>
+  <div class="cards">
+   <div class="card"><div class="icon">📲</div><h3>মোবাইল রিচার্জ</h3><p>বিভিন্ন মোবাইল অপারেটরের রিচার্জ ও টকটাইম সেবা।</p></div>
+   <div class="card"><div class="icon">💸</div><h3>bKash সেবা</h3><p>bKash লোড ও অনুমোদিত মোবাইল ফাইন্যান্সিয়াল সেবা।</p></div>
+   <div class="card"><div class="icon">📶</div><h3>SIM & Telecom</h3><p>SIM ও অন্যান্য টেলিকম-সংক্রান্ত প্রয়োজনীয় সহায়তা।</p></div>
+  </div>
+ </div>
 </section>
 
-<section>
-<div class="title"><h2>📍 দোকানের <span class="gold">ঠিকানা</span></h2></div>
-<div class="info"><p>উপজেলা মুন্সিগঞ্জ, থানা লৌহজ, মাওয়া</p><p>চন্দ্রবাড়ি বাজার, মাঝি মার্কেট</p></div>
+<section id="about">
+ <div class="container about">
+  <div>
+   <div class="title" style="text-align:left;margin-bottom:10px"><h2>Siam <span class="gold">Telikom</span></h2></div>
+   <p style="color:#aeb3bd">আপনার এলাকার মোবাইল ও টেলিকম সেবার জন্য আমাদের দোকানে যোগাযোগ করুন। দ্রুত সেবা এবং ভালো ব্যবহার—এটাই আমাদের লক্ষ্য।</p>
+  </div>
+  <a class="panel" href="https://www.google.com/maps/search/?api=1&query=Siam+Telikom%2C+Maji+Market%2C+Chandrabari+Bazar%2C+Mawa%2C+Louhajang%2C+Munshiganj%2C+Bangladesh" target="_blank" rel="noopener" aria-label="Google Maps-এ দোকানের লোকেশন দেখুন" style="display:block;transition:transform .2s,border-color .2s;">
+   <h3>📍 দোকানের ঠিকানা</h3>
+   <div class="info">
+    <div>উপজেলা মুন্সিগঞ্জ, থানা লৌহজ, মাওয়া</div>
+    <div>চন্দ্রবাড়ি বাজার, মাঝি মার্কেট</div>
+   </div>
+   <div style="margin-top:16px;text-align:center;color:#f4c542;font-weight:900">🗺️ এখানে চাপলে Google Maps খুলবে</div>
+  </a>
+ </div>
 </section>
 
-<section class="contact">
-<div class="title"><h2>যোগাযোগ <span class="gold">করুন</span></h2></div>
-<div class="grid">
-<div class="card"><h3>📞 ফোন</h3><p>01401901606</p><a class="call" href="tel:01401901606">এখনই কল করুন</a></div>
-<div class="card"><h3>💬 WhatsApp</h3><p>01401901606</p><a class="wa" href="https://wa.me/8801401901606" target="_blank">WhatsApp করুন</a></div>
-<div class="card"><h3>💸 bKash Agent</h3><p>01975038770</p><a class="bk" href="tel:01975038770">bKash নম্বর</a></div>
-<div class="card"><h3>🔐 Pasrol</h3><p>01806666488</p><a class="dark" href="tel:01806666488">কল করুন</a></div>
-</div>
+<section id="contact" class="contact">
+ <div class="container">
+  <div class="title"><h2>যোগাযোগ <span class="gold">করুন</span></h2><p>যেকোনো প্রয়োজনে সরাসরি যোগাযোগ করুন</p></div>
+  <div class="contactbox">
+   <div class="panel">
+    <h3>📞 ফোন</h3><p style="color:#aeb3bd;margin-top:6px">01401901606</p>
+    <a class="bigbtn call" href="tel:01401901606">কল করুন</a>
+   </div>
+   <div class="panel">
+    <h3>💬 WhatsApp</h3><p style="color:#aeb3bd;margin-top:6px">WhatsApp-এ সরাসরি মেসেজ করুন</p>
+    <a class="bigbtn wa" href="https://wa.me/8801401901606" target="_blank">WhatsApp করুন</a>
+   </div>
+   <div class="panel">
+    <h3>💸 bKash</h3><p style="color:#aeb3bd;margin-top:6px">01975038770</p>
+    <a class="bigbtn bk" href="tel:01401901606">bKash নম্বর</a>
+   </div>
+   <div class="panel">
+    <h3>📍 লোকেশন</h3><p style="color:#aeb3bd;margin-top:6px">মাঝি মার্কেট, চন্দ্রবাড়ি বাজার, মাওয়া</p>
+    <a class="bigbtn secondary" href="https://www.google.com/maps/search/?api=1&query=Siam+Telikom%2C+Maji+Market%2C+Chandrabari+Bazar%2C+Mawa%2C+Louhajang%2C+Munshiganj%2C+Bangladesh" target="_blank" rel="noopener">Google Maps</a>
+   </div>
+  </div>
+ </div>
 </section>
+</main>
+
 <footer>© 2026 Siam Telikom — All Rights Reserved.</footer>
 </body>
 </html>
